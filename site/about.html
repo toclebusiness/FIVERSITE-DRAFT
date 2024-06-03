@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - OFWConnect</title>
+    <link rel="stylesheet" href="/Users/iantocle/Desktop/site/assets/Untitled-1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="logo.png" alt="OFWConnect Logo"> <!-- Replace with your logo file -->
+                <h1>OFWConnect</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="auth.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>Welcome to OFWConnect, a platform dedicated to empowering Overseas Filipino Workers (OFWs) by providing a space to connect, share, and access essential services. Our goal is to create a supportive community where OFWs can find trustworthy services, buy and sell items, and engage in meaningful discussions.</p>
+            
+            <div class="group">
+                <div class="text-box">
+                    <h3>Our Mission</h3>
+                    <p>At OFWConnect, our mission is to support and empower OFWs by providing a reliable platform for finding trustworthy services, making safe transactions, and engaging in meaningful discussions. We aim to create a space where OFWs feel valued and connected, no matter where they are in the world.</p>
+                </div>
+                <div class="image-box">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <img src="mission1.jpg" alt="Mission Image 1">
+                        </div>
+                        <div class="mySlides">
+                            <img src="mission2.jpg" alt="Mission Image 2">
+                        </div>
+                        <div class="mySlides">
+                            <img src="mission3.jpg" alt="Mission Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group">
+                <div class="text-box">
+                    <h3>Our Team</h3>
+                    <p>OFWConnect is driven by a passionate individual dedicated to making a positive impact on the lives of OFWs around the world. While we may be starting small, our vision is to grow into a comprehensive platform that caters to all the needs of our community.</p>
+                    <a href="team.html" class="learn-more">Learn more</a>
+                </div>
+                <div class="image-box">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <img src="team1.jpg" alt="Team Image 1">
+                        </div>
+                        <div class="mySlides">
+                            <img src="team2.jpg" alt="Team Image 2">
+                        </div>
+                        <div class="mySlides">
+                            <img src="team3.jpg" alt="Team Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="group">
+                <div class="text-box">
+                    <h3>About Me</h3>
+                    <p>Welcome to OFWConnect! My name is [Your Name], and I am the founder and driving force behind this platform. As someone deeply committed to the welfare and empowerment of Overseas Filipino Workers (OFWs), I created OFWConnect to serve as a comprehensive hub where OFWs can access essential services, buy and sell goods, and connect with a supportive community.</p>
+                    <p>I envision OFWConnect growing into the go-to platform for OFWs worldwide, offering an extensive range of services and a vibrant community. By ensuring the authenticity and reliability of all listings and interactions, we strive to build a trusted network that enhances the lives of OFWs and their families.</p>
+                    <p>As an individual passionate about the well-being of OFWs, I understand the unique challenges you face. OFWConnect is built with the goal of addressing these challenges by providing easy access to necessary resources and fostering a sense of community.</p>
+                </div>
+                <div class="image-box">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <img src="aboutme1.jpg" alt="About Me Image 1">
+                        </div>
+                        <div class="mySlides">
+                            <img src="aboutme2.jpg" alt="About Me Image 2">
+                        </div>
+                        <div class="mySlides">
+                            <img src="aboutme3.jpg" alt="About Me Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 OFWConnect</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>

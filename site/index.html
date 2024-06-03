@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - OFWConnect</title>
+    <link rel="stylesheet" href="/Users/iantocle/Desktop/site/assets/Untitled-1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="logo.png" alt="OFWConnect Logo"> <!-- Replace with your logo file -->
+                <h1>OFWConnect</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="auth.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to OFWConnect</h1>
+            <input type="text" id="global-search" placeholder="Search...">
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+            <!-- Services Listing -->
+        </section>
+        <section class="marketplace">
+            <h2>Marketplace</h2>
+            <!-- Marketplace Items Listing -->
+        </section>
+        <section class="forum">
+            <h2>Forum</h2>
+            <!-- Forum Topics Listing -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OFWConnect</p>
+    </footer>
+    <script>
+       
+    document.addEventListener('DOMContentLoaded', () => {
+        // Animate header on scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#000';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+
+        // Fade-in effect for sections
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    </script>
+</body>
+</html>
+
